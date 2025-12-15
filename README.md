@@ -28,6 +28,6 @@ This project primarily functions as a Python backend service, typically communic
    ```
 2. Start the Python backend service:
    ```bash
-   python main.py
+   python api.py
    ```
 The backend service will run locally and process spatial data interpolation tasks submitted via the API.
