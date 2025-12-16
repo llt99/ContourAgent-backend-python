@@ -21,6 +21,25 @@ This project primarily functions as a Python backend service, typically communic
 - Python 3.8 or later
 - All dependencies listed in `requirements.txt` (e.g., `numpy`, `scipy`, `pykrige`, `shapely`, etc.)
 
+## Repository Structure
+```
+.  
+├── api.py                      # Main FastAPI application with Kriging logic and API endpoints
+├── nlp_processor.py            # Natural Language Processing related utilities
+├── data_query.py               # Implementation of the Data Retrieval Agent
+├── image.py                    # Implementation of the Map Generation Agent
+├── kriging.py                  # Implementation of the Interpolation Modeling Agent
+├── feedback_processor.py       # Implementation of the Feedback Agent
+├── prompt.py                   # Prompt related utilities 
+├── mcp_server.py               # MCP Server related utilities 
+├── mcp_tool.py                 # MCP Tool related utilities 
+├── agent.py                    # Implementation of the Multi-Agent system
+├── context_schema.py           # Schema definitions for context
+├── requirements.txt            # Python dependencies
+├── scBasin.geojson             # GeoJSON file defining the basin boundary for masking
+└── README.md                   # This README file
+```
+
 ## Usage and Reproducibility
 1. Install Python dependencies:
    ```bash
@@ -31,3 +50,6 @@ This project primarily functions as a Python backend service, typically communic
    python api.py
    ```
 The backend service will run locally and process spatial data interpolation tasks submitted via the API.
+
+## License
+This project is released under the MIT License.
